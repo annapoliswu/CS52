@@ -12,6 +12,13 @@
     background-color: white;
 }
 
+.card-image{
+    width: 100%;
+    height: 80%;
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
 .card-info-grid{
     display: grid;
     height: 12%;
