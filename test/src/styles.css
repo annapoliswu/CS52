@@ -1,0 +1,40 @@
+
+html{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.card{
+    width: 250px;
+    height:fit-content;
+    border: solid 1px rgb(99, 99, 99);
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 4px 4px #00000030;
+
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.card-name{
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.card-job{
+    font-size: 1rem;
+    color: #646464;
+}
+
+hr.solid {
+    border-top: 2px solid #a6a6a6;
+  }
