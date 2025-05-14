@@ -1,0 +1,169 @@
+
+body{
+    font-family: DM Sans, Helvetica, sans-serif;
+    line-height: 150%;
+}
+
+*{
+    margin: 0;
+}
+
+img{
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.px-m{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.py-m{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.overlay{
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00000060;
+}
+
+
+.icon{
+    height:40px;
+    width: 40px;
+}
+
+
+/*________________ BUTTONS ________________*/
+
+button{
+    padding: 8px 16px;
+    border-radius: 40px;
+    border: none;
+}
+
+
+button{
+    background-color:#222;
+    color: white;
+}
+
+.secondary{
+    background-color:white;
+    color: #222;
+}
+
+
+
+
+/*___________________ HEROES______________________*/
+
+.hero{
+    margin:0;
+    position: relative;
+    height: 300px;
+}
+
+.hero > img{
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-box{
+   z-index: 100;
+   position: absolute;
+   color: white;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   height: 100%;
+   width: 80%;
+   gap: 10px;
+
+   font-size: 32px;
+   line-height: 150%;
+}
+
+
+/*________________ IMAGE LEFT_RIGHT ________________*/
+
+.image-text-container{
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+    background-color: #121113;
+    color: #DDD;
+}
+
+.image-text-container > img{
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 200px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 4px
+}
+
+.image-text-container > .text-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+@media screen and ( min-width: 600px ) {
+
+    button{
+        max-width: 200px;
+    }
+
+    .px-m{
+        padding-left:40px;
+        padding-right:40px;
+    }
+
+    .hero-box{
+        width: 40%;
+    }
+
+    .image-text-container{
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        padding: 0, 0;
+    }
+    
+    .image-text-container > img{
+        height: 100%;
+        width: 30%;
+    }
+    
+    .image-text-container > .text-block{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        width: 70%;
+        padding-right: 40px;
+    }
+
+}
